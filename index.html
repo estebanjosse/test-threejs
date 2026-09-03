@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#090c16" />
+    <meta name="description" content="Crystal Escape, un mini-donjon 3D réalisé avec Three.js." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path fill=%22%2360f6ef%22 d=%22M50 4 88 50 50 96 12 50z%22/><path fill=%22%23090c16%22 d=%22M50 22 73 50 50 78 27 50z%22/></svg>" />
+    <title>Crystal Escape</title>
+  </head>
+  <body>
+    <canvas id="game" aria-label="Zone de jeu Crystal Escape"></canvas>
+
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Crystal Escape, recommencer">
+        <span class="brand-mark">◇</span>
+        <span>CRYSTAL <b>ESCAPE</b></span>
+      </a>
+      <button class="icon-button" id="soundButton" type="button" aria-label="Activer ou couper le son">♪</button>
+    </header>
+
+    <main class="hud" aria-live="polite">
+      <section class="mission-card">
+        <p class="eyebrow">OBJECTIF</p>
+        <p id="objective">Récupérez les cristaux</p>
+        <div class="progress-track"><span id="progressBar"></span></div>
+      </section>
+
+      <section class="stats">
+        <div class="stat"><span class="stat-icon crystal-icon">◆</span><strong id="crystalCount">0 / 5</strong><small>CRISTAUX</small></div>
+        <div class="stat"><span class="stat-icon">◷</span><strong id="timer">00:00</strong><small>TEMPS</small></div>
+        <div class="stat"><span class="stat-icon energy-icon">♥</span><strong id="energy">3</strong><small>ÉNERGIE</small></div>
+      </section>
+
+      <div class="message" id="message"></div>
+    </main>
+
+    <section class="intro panel" id="intro">
+      <p class="eyebrow">EXPÉDITION 01</p>
+      <h1>Le sanctuaire<br /><em>des cristaux</em></h1>
+      <p class="intro-copy">Traversez les ruines, évitez les gardiens et réveillez le portail avant que le sanctuaire ne vous retienne.</p>
+      <div class="controls-guide">
+        <div class="keys"><span>W</span><span>A</span><span>S</span><span>D</span></div>
+        <p><strong>Déplacez-vous</strong><br />Flèches ou ZQSD</p>
+      </div>
+      <button class="primary-button" id="startButton" type="button">ENTRER DANS LE SANCTUAIRE <span>→</span></button>
+    </section>
+
+    <section class="result panel" id="result" hidden>
+      <p class="eyebrow" id="resultEyebrow">SANCTUAIRE ÉVEILLÉ</p>
+      <h2 id="resultTitle">Évasion<br /><em>réussie</em></h2>
+      <p class="result-time">Votre temps <strong id="finalTime">00:00</strong></p>
+      <button class="primary-button" id="restartButton" type="button">REJOUER <span>↻</span></button>
+    </section>
+
+    <div class="mobile-controls" aria-label="Contrôles tactiles">
+      <button data-key="ArrowUp" aria-label="Avancer">▲</button>
+      <button data-key="ArrowLeft" aria-label="Aller à gauche">◀</button>
+      <button data-key="ArrowDown" aria-label="Reculer">▼</button>
+      <button data-key="ArrowRight" aria-label="Aller à droite">▶</button>
+    </div>
+
+    <div class="vignette"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
