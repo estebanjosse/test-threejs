@@ -1,0 +1,33 @@
+{
+  "console": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x3454001a8a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x3454001a8a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x3454001a8a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x3454001a8a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "log",
+      "text": "BJS - [19:20:33]: Babylon.js v9.25.0 - WebGL2"
+    },
+    {
+      "type": "log",
+      "text": "BJS - [19:21:02]: Babylon.js v9.25.0 - WebGL2"
+    },
+    {
+      "type": "log",
+      "text": "BJS - [19:21:30]: Babylon.js v9.25.0 - WebGL2"
+    }
+  ],
+  "requestFailures": []
+}

@@ -1,0 +1,11 @@
+
+> crystal-escape@1.0.0 build
+> vite build
+
+npm error code EAGAIN
+npm error syscall spawn sh
+npm error path /workspace/projects/explo/test-threejs
+npm error errno -11
+npm error spawn sh EAGAIN
+npm error command sh -c vite build
+npm error A complete log of this run can be found in: /opt/data/home/.npm/_logs/2026-10-03T18_37_43_738Z-debug-0.log

@@ -1,0 +1,82 @@
+{
+  "date_utc": "2026-10-03",
+  "repo": "test-threejs",
+  "source_baseline_commit": "158805be17737313b226911849f006f1a6f31d7c",
+  "performance": [
+    {
+      "repeat": 1,
+      "loadEventEnd_ms": 765.3999999985099,
+      "raf_interval_count": 29,
+      "raf_median_ms": 683.2999999999993,
+      "raf_p95_ms": 783.2999999999993,
+      "local_transferSize_bytes": 130276,
+      "local_encodedBodySize_bytes": 129376,
+      "local_decodedBodySize_bytes": 503010,
+      "sample_wall_seconds": 20.28367507099756
+    },
+    {
+      "repeat": 2,
+      "loadEventEnd_ms": 1403.6999999955297,
+      "raf_interval_count": 28,
+      "raf_median_ms": 699.8999999999987,
+      "raf_p95_ms": 883.2999999999993,
+      "local_transferSize_bytes": 130276,
+      "local_encodedBodySize_bytes": 129376,
+      "local_decodedBodySize_bytes": 503010,
+      "sample_wall_seconds": 20.38959384500049
+    },
+    {
+      "repeat": 3,
+      "loadEventEnd_ms": 1017.5,
+      "raf_interval_count": 31,
+      "raf_median_ms": 700,
+      "raf_p95_ms": 800,
+      "local_transferSize_bytes": 130276,
+      "local_encodedBodySize_bytes": 129376,
+      "local_decodedBodySize_bytes": 503010,
+      "sample_wall_seconds": 20.204741118999664
+    }
+  ],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "HeadlessChrome/153.0.8010.12",
+    "revision": "@971a7443b0c9b0a9b2860529b33331b76077ec62",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+    "jsVersion": "15.3.76.4"
+  },
+  "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "play": {
+    "victory": {
+      "verified": true,
+      "wall_seconds": 384.72152265800105,
+      "game_elapsed_seconds": 25.450000000000227,
+      "collected": 5,
+      "energy": 3,
+      "result": "\u00c9vasionr\u00e9ussie",
+      "captured_errors": [],
+      "restart_verified": true
+    },
+    "loss": {
+      "verified": true,
+      "wall_seconds": 92.50330660100008,
+      "game_elapsed_seconds": 7.099999999999983,
+      "collected": 1,
+      "energy": 0,
+      "result": "Les gardiensont gagn\u00e9",
+      "captured_errors": [],
+      "restart_verified": true
+    }
+  },
+  "boundary_collision_verified": true,
+  "synthetic_blur_verified": true,
+  "real_blur_verified": false,
+  "real_blur_limitation": "Headless tab activation produced no native blur; document.hasFocus remained true",
+  "limits": [
+    "Single environment using SwiftShader; RAF intervals not GPU timings",
+    "Three repetitions per scene in fixed order, not universally comparable",
+    "Visually different rendering/materials/light/dust counts despite same logical gameplay",
+    "No physical touch or human acceptance",
+    "loadEventEnd is not first usable rendered frame",
+    "Errors captured after warmup/start, not exhaustive startup instrumentation"
+  ]
+}

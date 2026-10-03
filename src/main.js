@@ -1,3 +1,4 @@
+import { installObservation } from './exploration.js';
 import * as THREE from 'three';
 import './style.css';
 
@@ -340,6 +341,7 @@ window.addEventListener('keydown', (event) => {
   keys.add(event.code);
 });
 window.addEventListener('keyup', (event) => keys.delete(event.code));
+window.addEventListener('blur', () => keys.clear());
 document.querySelectorAll('.mobile-controls button').forEach((button) => {
   const code = button.dataset.key;
   button.addEventListener('pointerdown', (event) => { event.preventDefault(); keys.add(code); button.setPointerCapture(event.pointerId); });
@@ -400,3 +402,11 @@ function animate() {
 }
 
 renderer.setAnimationLoop(animate);
+
+// Opt-in observation only: no game-state setter or gameplay bypass.
+installObservation(window, location.search, () => ({
+  x: player.position.x, z: player.position.z, elapsed, playing, ended, collected, energy,
+  keys: [...keys], obstacles,
+  crystals: crystals.map(c => ({ x: crystalPositions[c.index][0], z: crystalPositions[c.index][1], collected: c.collected })),
+  sentinels: sentinels.map(s => ({ x: (s.group || s.root).position.x, z: (s.group || s.root).position.z })),
+}));

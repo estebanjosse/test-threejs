@@ -1,0 +1,4 @@
+victory {'x': -1.2750000000000012, 'z': -10.390000000000006, 'elapsed': 25.450000000000227, 'collected': 5, 'energy': 3, 'ended': True} 384.72152265800105 True
+loss {'x': 0, 'z': 9.5, 'elapsed': 7.099999999999983, 'collected': 1, 'energy': 0, 'ended': True} 92.50330660100008 True
+victory {'x': -1.2750000000000012, 'z': -10.390000000000006, 'elapsed': 25.450000000000227, 'collected': 5, 'energy': 3, 'ended': True} 307.91469308499654 True
+loss {'x': 0, 'z': 9.5, 'elapsed': 8.249999999999982, 'collected': 1, 'energy': 0, 'ended': True} 107.43144290299824 True
